@@ -3,7 +3,7 @@ import React from 'react'
 const Logout = () => {
   return (
     <div>
-      HAS CERRADO SESIÓN
+      <h2>HAS CERRADO SESIÓN</h2>
     </div>
   )
 }

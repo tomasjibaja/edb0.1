@@ -1,5 +1,5 @@
 import React from 'react'
-import { TbLayoutDashboard } from "react-icons/tb";
+import { TbLayoutDashboard, TbCrystalBall } from "react-icons/tb";
 import { MdOutlineOndemandVideo, MdAccountCircle, MdLogout } from "react-icons/md";
 import { FaHatWizard, FaBook } from "react-icons/fa";
 import { FaMagnifyingGlass } from "react-icons/fa6";
@@ -13,8 +13,7 @@ const Sidebar = () => {
   return (
     <div className='sidebar'>
       <div className="logo">
-        <FaHatWizard id='witch-icon' />
-        <span>EDB</span>
+        <TbCrystalBall id='logo-icon' />
       </div>
       <div className="icons">
         <NavLink to={'/account'}>

@@ -1,9 +1,10 @@
 import React from 'react'
+import Loading from '../components/Loading'
 
 const Search = () => {
   return (
     <div>
-      BUSCAR NUEVO CONTENIDO
+      <h2>BUSCAR</h2>
     </div>
   )
 }

@@ -1,0 +1,92 @@
+.loading {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(99,9,99,.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: loading-bkg-glow 1s ease-in-out infinite;
+}
+
+.loading--crystal-and-hands {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.loading--ball {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  font-size: 70px;
+  animation: loading-glow .7s ease-in-out infinite;
+}
+
+.loading--ball-glow {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  border-radius: 50%;
+  width: 40px;
+  height: 60px;
+  filter: blur(7px);
+  animation: loading-color-cycle 7s infinite;
+  opacity: .5;
+}
+
+.loading--lh {
+  color: #eeddff;
+  font-size: 36px;
+  animation: loading-hover-lh 1.6s linear infinite;
+  filter: drop-shadow(0px 0px 2px purple);
+}
+
+.loading--rh {
+  color: #eeddff;
+  font-size: 36px;
+  animation: loading-hover-rh 1.8s linear infinite;
+  filter: drop-shadow(0px 0px 2px purple);
+}
+
+.loading--text {
+  font-size: 1rem;
+  padding-top: 25px;
+}
+
+@keyframes loading-color-cycle {
+  0% {background-color: blueviolet;}
+  25% {background-color: #ff128d;}
+  50% {background-color: hwb(241 17% 11%);}
+  75% {background-color: rgb(226, 43, 223);}
+  100% {background-color: blueviolet;}
+}
+
+@keyframes loading-glow {
+  0% {filter: brightness(1);}
+  50% {filter: brightness(1.3);}
+  100% {filter: brightness(1);}
+}
+
+@keyframes loading-hover-lh {
+  0% {transform: rotate(10deg) translate(-10px,0px);}
+  25% {transform: rotate(7deg) translate(-20px,-10px);}
+  50% {transform: rotate(3deg) translate(-10px,-20px);}
+  75% {transform: rotate(-3deg) translate(0px,-10px);}
+  100% {transform: rotate(10deg) translate(-10px,0px);}
+}
+
+@keyframes loading-hover-rh {
+  0% {transform: rotate(-18deg) translate(20px,-10px);}
+  25% {transform: rotate(-12deg) translate(30px,-20px);}
+  50% {transform: rotate(-18deg) translate(20px,-30px);}
+  75% {transform: rotate(-15deg) translate(10px,-20px);}
+  100% {transform: rotate(-18deg) translate(20px,-10px);}
+}
+
+@keyframes loading-bkg-glow {
+  0% {background-color: rgba(18,0,18,.2);}
+  50% {background-color: rgba(18,0,18,.3);}
+  100% {background-color: rgba(18,0,18,.2);}
+}

@@ -13,21 +13,28 @@
   padding: .7rem;
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: .7rem;
 }
 
 .main > :nth-child(2) {
   flex: 1;
-  padding-top: 2rem;
-  font-size: 3rem;
-  font-weight: 700;
   color: #9010a9;
-  background-color: rgba(99,10,99,.1);
+  background-color: rgba(99,10,99,.05);
   box-shadow: inset -9px -9px 30px rgba(70,20,70,.1);
   border-radius: .7rem;
+}
+
+.main > :nth-child(2) > * {
+  animation: appear .3s ease-in 1;
 }
 
 @keyframes appear {
   from {opacity: 0;}
   to {opacity: 1;}
+}
+
+@media (max-width: 800px)  {
+  .main {
+    flex-direction: column;
+  }
 }

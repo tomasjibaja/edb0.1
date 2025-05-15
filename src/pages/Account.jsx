@@ -3,7 +3,7 @@ import React from 'react'
 const Account = () => {
   return (
     <div>
-      CONFIGURACION DE CUENTA
+      <h2>TU CUENTA</h2>
     </div>
   )
 }

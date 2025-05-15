@@ -1,0 +1,33 @@
+.account {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: .7rem;
+}
+
+.account--title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.account--top {
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+  gap: .7rem;
+}
+
+.account--top > :nth-child(1) {
+  flex-grow: 1;
+}
+
+.account--personal {
+  flex-grow: 1;
+  padding: 10px 40px;
+}
+
+.account--personal > h2 {
+  text-align: left;
+  font-weight: 300;
+}

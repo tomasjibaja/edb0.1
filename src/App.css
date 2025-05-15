@@ -6,6 +6,14 @@
   position: absolute;
 }
 
+.card {
+  background-color: rgba(99,10,99,.03);
+  box-shadow: inset -9px -9px 30px rgba(70,20,70,.12);
+  border-radius: .7rem;
+  border-top: 1px solid rgba(220,235,250,.5);
+  border-left: 1px solid rgba(220,235,250,.5);
+}
+
 .main {
   position: absolute;
   inset: 0;
@@ -19,9 +27,6 @@
 .main > :nth-child(2) {
   flex: 1;
   color: #9010a9;
-  background-color: rgba(99,10,99,.05);
-  box-shadow: inset -9px -9px 30px rgba(70,20,70,.1);
-  border-radius: .7rem;
 }
 
 .main > :nth-child(2) > * {

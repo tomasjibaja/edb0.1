@@ -7,7 +7,7 @@
 }
 
 .card {
-  background-color: rgba(99,10,99,.03);
+  background-color: rgba(255,255,255,.5);
   box-shadow: inset -9px -9px 30px rgba(70,20,70,.12);
   border-radius: .7rem;
   border-top: 1px solid rgba(220,235,250,.5);

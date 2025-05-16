@@ -5,7 +5,8 @@ const ProfilePic = () => {
   return (
     <div className='profile-pic card'>
       <img src="./lu-bio.jpeg" alt="" />
-      <span>Ludmi Kondra</span>
+      <span>Ludmi</span>
+      <span>ADMIN</span>
     </div>
   )
 }

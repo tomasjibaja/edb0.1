@@ -7,7 +7,7 @@ const Account = () => {
     <div className='account'>
       <div className="account--top">
         <div className='account--title card'>
-          <h2>Perfil de cuenta</h2>
+          <h2>CUENTA</h2>
         </div>
         <ProfilePic />
       </div>

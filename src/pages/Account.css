@@ -14,6 +14,7 @@
 .account--top {
   display: flex;
   flex-direction: row;
+  height: 100px;
   align-items: top;
   justify-content: space-between;
   gap: .7rem;
@@ -36,6 +37,6 @@
 
 @media (max-width: 800px) {
   .account--top {
-    flex-direction: column;
+    height: 100px;
   }
 }

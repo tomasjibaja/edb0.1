@@ -27,3 +27,9 @@
   margin: 0;
   text-align: end;
 }
+
+@media (max-width: 800px) {
+  .astro-data > p {
+    font-size: .9rem;
+  }
+}

@@ -13,6 +13,7 @@
 
 .dashboard--top {
   display: flex;
+  flex-direction: row;
   align-items: top;
   justify-content: space-between;
   gap: .7rem;
@@ -30,4 +31,10 @@
 .dashboard--content > h2 {
   text-align: left;
   font-weight: 300;
+}
+
+@media (max-width: 800px) {
+  .dashboard--top {
+    flex-direction: column;
+  }
 }

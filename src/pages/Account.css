@@ -13,6 +13,7 @@
 
 .account--top {
   display: flex;
+  flex-direction: row;
   align-items: top;
   justify-content: space-between;
   gap: .7rem;
@@ -30,4 +31,11 @@
 .account--personal > h2 {
   text-align: left;
   font-weight: 300;
+}
+
+
+@media (max-width: 800px) {
+  .account--top {
+    flex-direction: column;
+  }
 }

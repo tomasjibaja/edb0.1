@@ -13,3 +13,9 @@
   overflow-y: scroll;
   scrollbar-width: none;
 }
+
+@media (max-width: 800px) {
+  .courses-container {
+    grid-template-columns: 1fr;
+  }
+}

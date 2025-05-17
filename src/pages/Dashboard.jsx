@@ -7,7 +7,7 @@ const Dashboard = () => {
     <div className='dashboard'>
       <div className="dashboard--top">
         <div className='dashboard--title card'>
-          <h2>DASHBOARD</h2>
+          <h2>INICIO</h2>
         </div>
         <MoonPhases />
       </div>

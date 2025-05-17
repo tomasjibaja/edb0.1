@@ -1,5 +1,39 @@
 .meditations {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  gap: .7rem;
+}
+
+.meditations--title {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.meditations--content {
+  flex-grow: 1;
+  padding: 40px;
+  overflow: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.meditations--desktop {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  place-content: center;
+  gap: 1rem;
+}
+
+@media (max-width: 800px) {
+
+  .meditations--title {
+    font-size: 1rem;
+    flex-grow: 0;
+    height: 50px;
+  }
 }

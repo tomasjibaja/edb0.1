@@ -6,6 +6,7 @@
 }
 
 .account--title {
+  font-size: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,7 +37,18 @@
 
 
 @media (max-width: 800px) {
+
   .account--top {
-    height: 100px;
+    height: 50px;
+  }
+
+  .account--title {
+    font-size: 1rem;
+    flex-grow: 0;
+    height: 50px;
+  }
+
+  .account--personal > h2 {
+    font-size: 1.2rem;
   }
 }

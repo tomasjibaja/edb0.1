@@ -5,6 +5,15 @@
   justify-content: center;
 }
 
-.not-found-icon {
-  font-size: 5rem;
+.not-found > img {
+  width: 10rem;
+  animation: appear 2s ease-in 1;
+}
+
+.not-found > a {
+  text-decoration: underline;
+  font-size: 1rem;
+  color: purple;
+  font-weight: 700;
+  cursor: pointer;
 }

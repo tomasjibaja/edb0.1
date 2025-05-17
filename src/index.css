@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #dddcde;
+  background-color: #dcdbdd;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,4 +16,11 @@
 body {
   padding: 0;
   margin: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+body::selection {
+  background: rgba(0,0,0,0 );
 }

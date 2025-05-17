@@ -1,12 +1,14 @@
 .loading {
+  z-index: 100;
   position: fixed;
   inset: 0;
-  background-color: rgba(99,9,99,.2);
+  background-color: rgba(45,18,45,.7);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   animation: loading-bkg-glow 1s ease-in-out infinite;
+  backdrop-filter: blur(3px);
 }
 
 .loading--crystal-and-hands {
@@ -53,6 +55,8 @@
 .loading--text {
   font-size: 1rem;
   padding-top: 25px;
+  font-weight: 700;
+  color: white;
 }
 
 @keyframes loading-color-cycle {

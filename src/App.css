@@ -8,10 +8,12 @@
 
 .card {
   background-color: rgba(255,255,255,.5);
-  box-shadow: inset -9px -9px 30px rgba(70,20,70,.12);
+  box-shadow: inset -3px -3px 30px rgba(70,20,70,.12);
   border-radius: .7rem;
   border-top: 1px solid rgba(220,235,250,.5);
   border-left: 1px solid rgba(220,235,250,.5);
+  border-bottom: 1px solid rgba(120,135,250,.3);
+  border-right: 1px solid rgba(120,135,250,.3);
 }
 
 .main {

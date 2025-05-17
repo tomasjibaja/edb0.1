@@ -32,4 +32,9 @@
   .astro-data > p {
     font-size: .9rem;
   }
+
+  .moon-phases {
+    gap: 0;
+    justify-content: space-between;
+  }
 }

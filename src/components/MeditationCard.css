@@ -1,0 +1,72 @@
+.meditation-card {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 1.2rem;
+  box-sizing: border-box;
+}
+
+.meditation-card > img {
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  object-position: center;
+  height: 200%;
+}
+
+.meditation-card--title {
+  color: white;
+  z-index: 1;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.meditation-card--subtitle {
+  color: white;
+  z-index: 1;
+  font-size: 1rem;
+  font-weight: 300;
+  opacity: .8;
+  text-align: left;
+}
+
+.meditation-card--plays {
+  color: white;
+  z-index: 1;
+  font-size: .9rem;
+  font-weight: 400;
+}
+
+.meditation-card--link {
+  position: relative;
+  color: white;
+  z-index: 1;
+  text-decoration: none;
+  width: 100%;
+  background-color: rgba(60,50,60,.7);
+  backdrop-filter: blur(3px);
+  border-radius: 2rem;
+  font-size: 1.1rem;
+  font-weight: 100;
+  line-height: 3rem;
+  margin-top: 9px;
+}
+
+.meditation-card--link > svg {
+  position: absolute;
+  right: 3px;
+  font-size: 3rem;
+  font-weight: 100;
+  opacity: .9;
+}
+
+@media (max-width: 800px) {
+  .meditation-card {
+    height: 500px;
+  }
+}

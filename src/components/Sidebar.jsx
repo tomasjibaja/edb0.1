@@ -1,45 +1,34 @@
-import React from 'react'
-import { TbLayoutDashboard, TbCrystalBall } from "react-icons/tb";
-import { MdOutlineOndemandVideo, MdAccountCircle, MdLogout } from "react-icons/md";
-import { FaHatWizard, FaBook } from "react-icons/fa";
-import { FaMagnifyingGlass } from "react-icons/fa6";
+import { useState } from 'react';
+import { TbLayoutDashboard,  } from "react-icons/tb";
+import { GiMeditation } from "react-icons/gi";
 import { BsMoonStars } from "react-icons/bs";
-import { NavLink } from 'react-router-dom';
-
-
+import { NavLink, Link } from 'react-router-dom';
 import './Sidebar.css'
 
 const Sidebar = () => {
+
+  const [accountMenu, setAccountMenu] = useState(false);
+
   return (
     <div className='sidebar'>
-      <div className="logo">
-        <TbCrystalBall id='logo-icon' />
+      <div className="avatar">
+        <img src="./lu-bio.jpeg" alt="" onClick={() => setAccountMenu(!accountMenu)}/>
+        {accountMenu && <div className="account-menu" onMouseLeave={() => setAccountMenu(!accountMenu)}>
+          <Link to={'/cuenta'} onClick={() => setAccountMenu(!accountMenu)}>Tu cuenta</Link>
+          <Link to={'/logout'} onClick={() => setAccountMenu(!accountMenu)}>Cerrar sesión</Link>
+        </div>}
       </div>
       <div className="icons">
-        <NavLink to={'/account'}>
-          <MdAccountCircle />
-        </NavLink>
         <NavLink to={'/'}>
           <TbLayoutDashboard />
         </NavLink>
-        <NavLink to={'/courses'}>
-          <MdOutlineOndemandVideo />
+        <NavLink to={'/meditaciones'}>
+          <GiMeditation />
         </NavLink>
-        <NavLink to={'/search'}>
-          <FaMagnifyingGlass />
-        </NavLink>
-        <NavLink to={'/manuals'}>
-          <FaBook />
-        </NavLink>
-        <NavLink to={'/meditations'}>
+        <NavLink to={'/practicas'}>
           <BsMoonStars />
         </NavLink>
-        <NavLink to={'/logout'}>
-          <MdLogout />
-        </NavLink>
-
       </div>
-
     </div>
   )
 }

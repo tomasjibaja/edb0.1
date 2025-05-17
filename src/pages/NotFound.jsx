@@ -7,11 +7,11 @@ import './NotFound.css'
 const NotFound = () => {
   return (
     <div className='not-found'>
-      <h2>Error 404 - Recurso no encontrado</h2>
-      <BiSolidConfused className='not-found-icon' />
+      <h2>¡Uy! Nada por aquí...</h2>
+      <img src="./Numi.png" alt="Ludmi" />
       <p>La página a la que intentas acceder no existe.</p>
       <NavLink to={'/'}>
-        Volver al inicio
+        Click aquí para volver al INICIO
       </NavLink>
     </div>
   )

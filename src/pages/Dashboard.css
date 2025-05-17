@@ -6,9 +6,13 @@
 }
 
 .dashboard--title {
+  font-size: 1.5rem;
+  height: auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-grow: 1;
 }
 
 .dashboard--top {
@@ -18,10 +22,6 @@
   align-items: top;
   justify-content: space-between;
   gap: .7rem;
-}
-
-.dashboard--top > :nth-child(1) {
-  flex-grow: 1;
 }
 
 .dashboard--content {
@@ -37,6 +37,12 @@
 @media (max-width: 800px) {
   .dashboard--top {
     flex-direction: column;
-    height: 200px;
+    height: 150px;
+  }
+
+  .dashboard--title {
+    font-size: 1rem;
+    flex-grow: 0;
+    height: 50px;
   }
 }

@@ -9,6 +9,15 @@
   justify-content: flex-end;
   padding: 1.2rem;
   box-sizing: border-box;
+  box-shadow: 0 3px 7px transparent;
+  filter: brightness(.9);
+  transition: all .3s ease;
+}
+
+.meditation-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 3px 7px rgba(60,50,60,.3);
+  filter: brightness(1.1);
 }
 
 .meditation-card > img {
@@ -17,6 +26,11 @@
   object-fit: cover;
   object-position: center;
   height: 200%;
+  transition: all .7s ease;
+}
+
+.meditation-card:hover > img {
+  transform: scale(1.02);
 }
 
 .meditation-card--title {

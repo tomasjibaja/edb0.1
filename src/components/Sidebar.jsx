@@ -19,13 +19,13 @@ const Sidebar = () => {
         </div>}
       </div>
       <div className="icons">
-        <NavLink to={'/'}>
+        <NavLink to={'/'} className={({ isActive }) => (isActive ? 'active-navlink' : 'inactive-navlink')}>
           <TbLayoutDashboard />
         </NavLink>
-        <NavLink to={'/meditaciones'}>
+        <NavLink to={'/meditaciones'} className={({ isActive }) => (isActive ? 'active-navlink' : 'inactive-navlink')}>
           <GiMeditation />
         </NavLink>
-        <NavLink to={'/practicas'}>
+        <NavLink to={'/practicas'} className={({ isActive }) => (isActive ? 'active-navlink' : 'inactive-navlink')}>
           <BsMoonStars />
         </NavLink>
       </div>

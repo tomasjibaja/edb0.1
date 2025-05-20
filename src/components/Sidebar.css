@@ -70,6 +70,30 @@
   font-size: 1.6rem;
 }
 
+.icons svg {
+  transition: all .3s ease;
+}
+
+.icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  transition: all .7s ease;
+}
+
+.icons a:hover {
+  border: 1px solid #ccaabb;
+}
+
+.active-navlink > svg {
+  filter: drop-shadow(0 3px 0 #701070);
+  transform: scale(1.15) translateY(-2px);
+}
+
 @media (max-width: 800px)  {
 
   .sidebar {

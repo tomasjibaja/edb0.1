@@ -1,25 +1,77 @@
-import React from 'react'
-import { Routes, Route } from 'react-router-dom'
-import Dashboard from '../pages/Dashboard'
-import Account from '../pages/Account'
-import Meditations from '../pages/Meditations'
-import Meditation from '../pages/Meditation'
-import Logout from '../pages/Logout'
-import NotFound from '../pages/NotFound'
-import Practices from '../pages/Practices'
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Dashboard from "../pages/Dashboard";
+import Account from "../pages/Account";
+import Meditations from "../pages/Meditations";
+import Meditation from "../pages/Meditation";
+import NotFound from "../pages/NotFound";
+import Practices from "../pages/Practices";
+import Login from "../pages/Login";
+import Sidebar from "../components/Sidebar";
+import UserRoute from "../components/UserRoute";
+import PublicRoute from "../components/PublicRoute";
 
 const Router = () => {
   return (
     <Routes>
-      <Route path='/' element={<Dashboard />} />
-      <Route path='/cuenta' element={<Account />} />
-      <Route path='/meditaciones' element={<Meditations />} />
-      <Route path='/meditaciones/:id' element={<Meditation />} />
-      <Route path='/practicas' element={<Practices />} />
-      <Route path='/logout' element={<Logout />} />
-      <Route path='/*' element={<NotFound />} />
+      <Route
+        path="/login"
+        element={
+          <PublicRoute>
+            <Login />
+          </PublicRoute>
+        }
+      />
+      <Route
+        path="/"
+        element={
+          <UserRoute>
+            <Dashboard />
+          </UserRoute>
+        }
+      />
+      <Route
+        path="/cuenta"
+        element={
+          <UserRoute>
+            <Account />
+          </UserRoute>
+        }
+      />
+      <Route
+        path="/meditaciones"
+        element={
+          <UserRoute>
+            <Meditations />
+          </UserRoute>
+        }
+      />
+      <Route
+        path="/meditaciones/:id"
+        element={
+          <UserRoute>
+            <Meditation />
+          </UserRoute>
+        }
+      />
+      <Route
+        path="/practicas"
+        element={
+          <UserRoute>
+            <Practices />
+          </UserRoute>
+        }
+      />
+      <Route
+        path="/*"
+        element={
+          <UserRoute>
+            <NotFound />
+          </UserRoute>
+        }
+      />
     </Routes>
-  )
-}
+  );
+};
 
-export default Router
+export default Router;

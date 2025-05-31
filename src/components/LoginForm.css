@@ -1,0 +1,106 @@
+.login-form {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 36%;
+  background-color: #999afa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+
+.login-form--bkg {
+  position: absolute;
+  z-index: -1;
+  opacity: .2;
+  animation: login-bkg 90s ease-in-out infinite;
+}
+
+.login-form > svg {
+  width: 90px;
+  height: 90px;
+  animation: login-glare 30s linear infinite;
+}
+
+.login-form > h3 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.login-form > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  gap: 1.2rem;
+}
+
+.login-form > form > input {
+  box-sizing: border-box;
+  width: 100%;
+  line-height: 3rem;
+  font-size: 1.1rem;
+  font-weight: 200;
+  padding: 0 .9rem;
+  border-radius: 18px;
+  border: none;
+  background-color: #aaaefe;
+  outline: none;
+}
+
+.login-form > form > input:focus {
+  outline: 1px solid #cccefe;
+}
+
+.login-form > form > input::placeholder {
+  color: #cccefe;
+}
+
+.login-form > form > button {
+  margin: 0;
+  width: 100%;
+  height: 3rem;
+  border-radius: 30px;
+  background-color: #cccefe;
+  border: 2px solid #cccefe;
+  color: #787cf1;
+  font-size: 1.1rem;
+  font-weight: 200;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.login-form > form > button:hover {
+  background-color: #bbbefe;
+}
+
+.login--footer {
+  width: 60%;
+  font-size: .8rem;
+}
+
+@keyframes login-bkg {
+  0% {transform: translateY(-90px);}
+  50% {transform: translateY(90px);}
+  100% {transform: translateY(-90px);}
+}
+
+@keyframes login-glare {
+  0% {filter: drop-shadow(0 0 3px transparent);}
+  68% {filter: drop-shadow(0 0 3px transparent);}
+  69% {filter: drop-shadow(0 0 3px white);}
+  70% {filter: drop-shadow(0 0 3px transparent);}
+  71% {filter: drop-shadow(0 0 7px white);}
+  72% {filter: drop-shadow(0 0 3px transparent);}
+  100% {filter: drop-shadow(0 0 3px transparent);}
+}
+
+@media (max-width: 800px) {
+  .login-form {
+    width: 100%;
+  }
+}

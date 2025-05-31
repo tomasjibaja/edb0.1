@@ -1,0 +1,21 @@
+.login--img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  min-width: 64%;
+  object-fit: cover;
+  animation: login-brightness 18s ease-in-out infinite;
+}
+
+@keyframes login-brightness {
+  0% {filter: brightness(.93);}
+  50% {filter: brightness(.7);}
+  100% {filter: brightness(.93);}
+}
+
+@media (max-width: 800px) {
+  .login--img {
+    display: none;
+  }
+}

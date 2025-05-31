@@ -15,7 +15,7 @@ const Sidebar = () => {
         <img src="./lu-bio.jpeg" alt="" onClick={() => setAccountMenu(!accountMenu)}/>
         {accountMenu && <div className="account-menu" onMouseLeave={() => setAccountMenu(!accountMenu)}>
           <Link to={'/cuenta'} onClick={() => setAccountMenu(!accountMenu)}>Tu cuenta</Link>
-          <Link to={'/logout'} onClick={() => setAccountMenu(!accountMenu)}>Cerrar sesión</Link>
+          <Link to={'/login'} onClick={() => setAccountMenu(!accountMenu)}>Cerrar sesión</Link>
         </div>}
       </div>
       <div className="icons">

@@ -1,13 +1,29 @@
 import { useState } from 'react';
+import { toast, Slide } from 'react-toastify';
 import { TbLayoutDashboard,  } from "react-icons/tb";
 import { GiMeditation } from "react-icons/gi";
 import { BsMoonStars } from "react-icons/bs";
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink, Link, useNavigate } from 'react-router-dom';
 import './Sidebar.css'
 
 const Sidebar = () => {
 
   const [accountMenu, setAccountMenu] = useState(false);
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    toast('👋 Cerraste sesión, hasta pronto!', {
+      position: 'top-center',
+      autoClose: 2000,
+      closeButton: false,
+      hideProgressBar: true,
+      transition: Slide,
+      className: 'toast-session'
+    });
+    setAccountMenu(!accountMenu);
+    localStorage.clear('login');
+    navigate('/login');
+  }
 
   return (
     <div className='sidebar'>
@@ -15,7 +31,7 @@ const Sidebar = () => {
         <img src="./lu-bio.jpeg" alt="" onClick={() => setAccountMenu(!accountMenu)}/>
         {accountMenu && <div className="account-menu" onMouseLeave={() => setAccountMenu(!accountMenu)}>
           <Link to={'/cuenta'} onClick={() => setAccountMenu(!accountMenu)}>Tu cuenta</Link>
-          <Link to={'/login'} onClick={() => setAccountMenu(!accountMenu)}>Cerrar sesión</Link>
+          <a onClick={() => handleLogout()}>Cerrar sesión</a>
         </div>}
       </div>
       <div className="icons">

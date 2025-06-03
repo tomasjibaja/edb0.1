@@ -50,6 +50,7 @@
 
 .account-menu > a {
   font-weight: 500;
+  cursor: pointer;
 }
 
 .avatar > img {

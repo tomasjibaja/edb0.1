@@ -16,6 +16,20 @@
   border-right: 1px solid rgba(120,135,250,.3);
 }
 
+.visible {
+  opacity: 1;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.toast-session {
+  background-color: var(--lila);
+  width: fit-content;
+  color: var(--blanco);
+}
+
 .main {
   position: absolute;
   inset: 0;

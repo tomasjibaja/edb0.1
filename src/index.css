@@ -11,6 +11,33 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+ /* COLORES */ 
+  --blanco: #ffffff;
+  --blanco-70: rgba(255, 255, 255,.7);
+  --blanco-50: rgba(255, 255, 255,.5);
+  --blanco-30: rgba(255, 255, 255,.3);
+  --purpura: #2e094d;
+  --violeta-dark: #8f1eeb77;
+  --violeta: #8e1eeb;
+  --uva: #a600e8;
+  --lila-dark: #715ed0;
+  --lavanda: #787cf1;
+  --lila: #999afa;
+  --lila-90: rgba(153, 154, 250, .9);
+  --lila-70: rgba(153, 154, 250, .7);
+  --lila-50: rgba(153, 154, 250, .5);
+  --lila-30: rgba(153, 154, 250, .3);
+  --dawn: #aaaefe;
+  --pale: #cccefe;
+  --lima: #ebfc79;
+  --rosa: #fd24a8;
+  --rosa-70: rgba(253, 36, 168,.7);
+  --wine: #fd24a66f;
+  --shadow-90: rgba(0,0,0,.9);
+  --shadow-70: rgba(0,0,0,.7);
+  --shadow-50: rgba(0,0,0,.5);
+  --shadow-30: rgba(0,0,0,.3);
 }
 
 body {

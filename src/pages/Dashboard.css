@@ -37,7 +37,8 @@
 @media (max-width: 800px) {
   .dashboard--top {
     flex-direction: column;
-    height: 150px;
+    justify-content: space-evenly;
+    height: 170px;
   }
 
   .dashboard--title {

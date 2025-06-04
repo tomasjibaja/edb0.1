@@ -5,7 +5,7 @@
   height: 100%;
   min-width: 64%;
   object-fit: cover;
-  transition: transform .7s ease;
+  transition: transform 1.6s ease;
   animation: login-brightness 18s ease-in-out infinite;
 }
 

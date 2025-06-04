@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { toast, Slide } from 'react-toastify'
 import { useForm } from 'react-hook-form';
+import { FaCamera } from "react-icons/fa";
+import { isMobile } from 'react-device-detector';
 import './Account.css'
 
 const Account = () => {
@@ -19,6 +21,28 @@ const Account = () => {
     })
   }
 
+  const handlePicChange = () => {
+    toast('Has cambiado tu foto de perfil', {
+      position: 'bottom-center',
+      autoClose: 2000,
+      closeButton: false,
+      hideProgressBar: true,
+      transition: Slide,
+      className: 'toast-session'
+    })    
+  }
+
+  const handlePasswordChange = () => {
+    toast('Has cambiado tu contraseña', {
+      position: 'bottom-center',
+      autoClose: 2000,
+      closeButton: false,
+      hideProgressBar: true,
+      transition: Slide,
+      className: 'toast-session'
+    })    
+  }
+
   return (
     <div className='account'>
       <div className="account--top">
@@ -27,7 +51,6 @@ const Account = () => {
         </div>
       </div>
       <div className="account--personal card">
-        <h2>Datos personales</h2>
         <div className="account--personal-container">
           <form onSubmit={handleSubmit(onSubmit)}>
             <label htmlFor="user">Usuario</label>
@@ -40,13 +63,33 @@ const Account = () => {
             <label htmlFor="dob">Fecha de nacimiento</label>
             <input placeholder='DD/MM/AA' {...register('dob', { required: true })} />
 
-            <a onClick={() => {}}>Cambiar contraseña</a>
+            <a onClick={() => handlePasswordChange()}>Cambiar contraseña</a>
 
             <button type='submit'>Guardar cambios</button>
           </form>
           <div className="account--profile-pic">
             <h3>Foto de perfil</h3>
-            <img src="./lu-bio.jpeg" alt="" />
+            <div 
+              className="account--pic-wrapper" 
+              onClick={() => handlePicChange()}
+            >
+              <img src="./lu-bio.jpeg" alt="" />
+              <FaCamera id='account--camera' />
+            </div>
+            {
+              isMobile && 
+              <button 
+                id='profile-pic-change'
+                onClick={() => handlePicChange()}
+              >
+                Cambiar foto
+              </button>
+            }
+            {!isMobile && <p className='account--img-specs'>
+              Mínimo recomendado: 500x500px <br/>
+              Máximo recomendado: 900x900px <br/>
+              PNG o JPG
+            </p>}
           </div>
         </div>
       </div>

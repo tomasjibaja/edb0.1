@@ -58,7 +58,7 @@
   height: 2.5rem;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid rgba(255, 255, 255, 0.87);
+  border: 2px solid var(--blanco-50);
   cursor: pointer;
 }
 

@@ -3,6 +3,7 @@ import MoonPhases from '../components/MoonPhases'
 import './Dashboard.css'
 
 const Dashboard = () => {
+
   return (
     <div className='dashboard'>
       <div className="dashboard--top">

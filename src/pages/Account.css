@@ -26,6 +26,10 @@
 }
 
 .account--personal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   flex-grow: 1;
   padding: 10px 40px;
 }
@@ -36,21 +40,24 @@
 }
 
 .account--personal-container {
+  width: 90%;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .account--personal-container > form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 20px;
-  flex-grow: 1;
+  width: 50%;
+  border-right: 1px solid var(--lila-50);
 }
 
 .account--personal-container > form > * {
-  width: 500px;
+  width: 450px;
   box-sizing: border-box;
   transition: all .3s ease;
 }
@@ -87,6 +94,7 @@
   margin-bottom: 2rem;
   text-decoration: underline;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .account--personal-container > form > button {
@@ -104,7 +112,18 @@
 }
 
 .account--profile-pic {
-  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 100%;
+  flex-grow: 1;
+}
+
+.account--img-specs {
+  font-size: .8rem;
+  color: var(--lila);
 }
 
 .account--profile-pic > h3 {
@@ -112,12 +131,39 @@
   font-size: 1rem;
 }
 
-.account--profile-pic > img {
+.account--pic-wrapper {
+  position: relative;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+}
+
+.account--pic-wrapper > img {
   border-radius: 50%;
   width: 200px;
   height: 200px;
   object-fit: cover;
   border: 5px solid var(--dawn);
+  transition: all .3s ease-in-out;
+  box-sizing: border-box;
+}
+
+#account--camera {
+  font-size: 4rem;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  color: transparent;
+  transition: all .3s ease-in-out;
+}
+
+.account--pic-wrapper:hover > img {
+  border: 9px solid var(--pale);
+}
+
+.account--pic-wrapper:hover > #account--camera {
+  color: var(--lila-70);
 }
 
 @media (max-width: 800px) {
@@ -151,12 +197,39 @@
   }
 
   .account--profile-pic {
-    width: fit-content;
-    height: 250px;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem;
   }
 
-  .account--profile-pic > img {
+  .account--personal-container > form {
+    width: 100%;
+    border: none;
+  }
+
+  .account--pic-wrapper {
+    height: unset;
+  }
+
+  .account--pic-wrapper:hover > img {
+    border: 5px solid var(--dawn);
+  }
+  
+  .account--pic-wrapper:hover > #account--camera {
+    color: transparent;
+  }
+
+  .account--pic-wrapper > img {
     width: 160px;
     height: 160px;
+  }
+
+  #profile-pic-change {
+    font-weight: 500;
+    font-size: .9rem;
+    padding: 10px 15px;
+    background-color: var(--lila);
+    border-radius: 18px;
+    border: none;
   }
 }

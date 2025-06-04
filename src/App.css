@@ -43,7 +43,7 @@
 
 .main > :nth-child(2) {
   flex: 1;
-  color: #9010a9;
+  color: var(--lila-dark);
 }
 
 .main > :nth-child(2) > * {

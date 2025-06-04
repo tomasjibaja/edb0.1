@@ -23,6 +23,7 @@ const LoginForm = () => {
     }
     );
     localStorage.setItem('login', true);
+    localStorage.setItem('email', data.email);
     navigate('/');
   };
 

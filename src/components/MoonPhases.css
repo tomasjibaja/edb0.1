@@ -6,16 +6,23 @@
   gap: 2rem;
   padding: 20px 30px;
   flex-grow: 0;
+  background-image: url(./login-bkg.png);
+  background-size: cover;
+  background-blend-mode: soft-light;
+  animation: moon-bkg-move 300s ease-in-out infinite;
 }
 
 .phase {
   display: flex;
   flex-direction: column;
   align-items: center;
+  backdrop-filter: blur(3px);
 }
 
 .phase > svg {
   font-size: 2rem;
+  position: relative;
+  animation: moon-translate 9s linear infinite;
 }
 
 .phase > span {
@@ -26,6 +33,21 @@
 .astro-data > p {
   margin: 0;
   text-align: end;
+  backdrop-filter: blur(2px);
+}
+
+@keyframes moon-translate {
+  0% {filter: drop-shadow(12px 3px 5px var(--lavanda));}
+  25% {filter: drop-shadow(0px 6px 5px var(--lavanda));}
+  50% {filter: drop-shadow(-12px 3px 5px var(--lavanda));}
+  75% {filter: drop-shadow(0px -6px 5px var(--lavanda));}
+  100% {filter: drop-shadow(12px 3px 5px var(--lavanda));}
+}
+
+@keyframes moon-bkg-move {
+  0% {background-position-y: top;}
+  50% {background-position-y: bottom;}
+  100% {background-position-y: top;}
 }
 
 @media (max-width: 800px) {

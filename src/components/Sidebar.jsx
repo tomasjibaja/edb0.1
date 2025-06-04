@@ -22,6 +22,7 @@ const Sidebar = () => {
     });
     setAccountMenu(!accountMenu);
     localStorage.clear('login');
+    localStorage.clear('email');
     navigate('/login');
   }
 

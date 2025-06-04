@@ -14,11 +14,12 @@
 
  /* COLORES */ 
   --blanco: #ffffff;
+  --blanco-90: rgba(255, 255, 255,.9);
   --blanco-70: rgba(255, 255, 255,.7);
   --blanco-50: rgba(255, 255, 255,.5);
   --blanco-30: rgba(255, 255, 255,.3);
-  --purpura: #2e094d;
-  --violeta-dark: #8f1eeb77;
+  --purpura: #4c1d72;
+  --violeta-50: #8f1eeb77;
   --violeta: #8e1eeb;
   --uva: #a600e8;
   --old-purple: #9010a9;
@@ -29,6 +30,7 @@
   --lila-70: rgba(153, 154, 250, .7);
   --lila-50: rgba(153, 154, 250, .5);
   --lila-30: rgba(153, 154, 250, .3);
+  --lila-10: rgba(153, 154, 250, .1);
   --dawn: #aaaefe;
   --pale: #cccefe;
   --lima: #ebfc79;

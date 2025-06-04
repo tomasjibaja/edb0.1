@@ -39,11 +39,25 @@
 }
 
 .login-form > form > label {
+  position: relative;
   line-height: 1rem;
   font-size: .9rem;
   padding-left: 1rem;
   align-self: flex-start;
   text-align: left;
+  width: 100%;
+}
+
+.login-form--password-toggle {
+  position: absolute;
+  color: var(--purpura);
+  font-weight: 700;
+  right: 2rem;
+  cursor: pointer;
+}
+
+.login-form--password-toggle:hover {
+  color: var(--lila-dark);
 }
 
 .login-form > form > input {

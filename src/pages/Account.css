@@ -39,28 +39,29 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: space-evenly;
-  border: 1px solid;
+  justify-content: space-around;
 }
 
 .account--personal-container > form {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  border: 1px solid;
   flex-grow: 1;
 }
 
 .account--personal-container > form > * {
   width: 500px;
   box-sizing: border-box;
+  transition: all .3s ease;
 }
 
 .account--personal-container > form > label {
   text-align: left;
+  color: var(--lila-dark);
 }
 
 .account--personal-container > form > input {
+  color: var(--lavanda);
   height: 2rem;
   border-radius: 7px;
   padding-left: .5rem;
@@ -68,32 +69,55 @@
   background-color: var(--blanco-30);
   outline: none;
   border: 1px solid var(--lavanda);
-  transition: outline .1s ease;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.account--personal-container > form > input::placeholder {
+  color: var(--lila-70);
 }
 
 .account--personal-container > form > input:focus {
   outline: 1px solid var(--lila);
-  background-color: var(--lila-30);
+  color: var(--lila-dark);
+  background-color: var(--lila-10);
 }
 
 .account--personal-container > form > a {
   text-align: left;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   text-decoration: underline;
   font-weight: 700;
 }
 
 .account--personal-container > form > button {
-  height: 2rem;
-  border-radius: 9px;
-  border: 2px solid var(--dawn);
+  height: 2.5rem;
+  font-size: 1rem;
+  border-radius: 18px;
+  border: 2px solid var(--lila);
   background-color: var(--lila);
+  cursor: pointer;
+}
+
+.account--personal-container > form > button:hover {
+  background-color: var(--lila-50);
+  color: var(--lavanda);
 }
 
 .account--profile-pic {
   width: 500px;
-  border: 1px solid;
+}
+
+.account--profile-pic > h3 {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.account--profile-pic > img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 5px solid var(--dawn);
 }
 
 @media (max-width: 800px) {
@@ -110,10 +134,29 @@
 
   .account--personal > h2 {
     font-size: 1.2rem;
+    text-align: center;
   }
 
   .account--personal-container {
     flex-direction: column-reverse;
     align-items: center;
+  }
+
+  .account--personal-container > form > input {
+    margin-bottom: 1rem;
+  }
+
+  .account--personal-container > form > * {
+    width: 270px;
+  }
+
+  .account--profile-pic {
+    width: fit-content;
+    height: 250px;
+  }
+
+  .account--profile-pic > img {
+    width: 160px;
+    height: 160px;
   }
 }

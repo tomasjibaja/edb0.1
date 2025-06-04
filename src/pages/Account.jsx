@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { toast, Slide } from 'react-toastify'
 import { useForm } from 'react-hook-form';
 import './Account.css'
 
@@ -8,7 +9,14 @@ const Account = () => {
   const { register, formState: { errors }, handleSubmit } = useForm();
 
   const onSubmit = () => {
-
+    toast('Cambios guardados correctamente ✅', {
+      position: 'bottom-center',
+      autoClose: 2000,
+      closeButton: false,
+      hideProgressBar: true,
+      transition: Slide,
+      className: 'toast-session'
+    })
   }
 
   return (
@@ -28,15 +36,17 @@ const Account = () => {
             <label htmlFor="email">Correo electrónico</label>
             <input defaultValue={email} {...register('email', { required: true })} />
 
-            <a onClick={() => {}}>Cambiar contraseña</a>
 
             <label htmlFor="dob">Fecha de nacimiento</label>
             <input placeholder='DD/MM/AA' {...register('dob', { required: true })} />
+
+            <a onClick={() => {}}>Cambiar contraseña</a>
 
             <button type='submit'>Guardar cambios</button>
           </form>
           <div className="account--profile-pic">
             <h3>Foto de perfil</h3>
+            <img src="./lu-bio.jpeg" alt="" />
           </div>
         </div>
       </div>

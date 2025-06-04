@@ -1,6 +1,6 @@
 .sidebar {
   position: relative;
-  background-image: linear-gradient(to bottom right, var(--violeta-dark), var(--lila-dark));
+  background-image: linear-gradient(to bottom right, var(--violeta-50), var(--lila-dark));
   border-radius: .7rem;
   width: 3rem;
   display: flex;
@@ -43,7 +43,7 @@
   padding: 1rem;
   width: 150px;
   height: 100px;
-  background-image: linear-gradient(to bottom right, var(--lila-dark), var(--violeta-dark));
+  background-image: linear-gradient(to bottom right, var(--lila-dark), var(--violeta-50));
   animation: appear .3s ease-in 1;
   z-index: 10;
 }

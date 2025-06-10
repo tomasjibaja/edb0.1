@@ -5,7 +5,7 @@ export default [
     subtitle: 'Disolvé tus límites',
     img: 'sky.jpg',
     url: '../af/m/1.mp3',
-    plays: 56
+    duration: 10
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export default [
     subtitle: 'Un instante para tu ser',
     img: 'eclipse.jpg',
     url: '../af/m/2.mp3',
-    plays: 76
+    duration: 19
   },
   {
     id: 3,
@@ -21,15 +21,15 @@ export default [
     subtitle: 'Todo llega a vos',
     img: 'earth.jpg',
     url: '../af/m/3.mp3',
-    plays: 456
+    duration: 10
   },
   {
     id: 4,
     title: 'Silencio',
-    subtitle: 'Sarlanga',
+    subtitle: 'Paz y plenitud',
     img: 'silencio.jpg',
     url: '../af/m/4.mp3',
-    plays: 23
+    duration: 10
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ export default [
     subtitle: 'Deja ir lo que te detiene',
     img: 'pasado.jpg',
     url: '../af/m/5.mp3',
-    plays: 87
+    duration: 38
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ export default [
     subtitle: 'Relaciones difíciles',
     img: 'vinculos.jpg',
     url: '../af/m/6.mp3',
-    plays: 987
+    duration: 14
   },
   {
     id: 7,
@@ -53,7 +53,7 @@ export default [
     subtitle: 'Sonido de prueba',
     img: 'gems.jpg',
     url: '../af/m/test.mp3',
-    plays: 74
+    duration: 1
   },
   {
     id: 8,
@@ -61,15 +61,15 @@ export default [
     subtitle: 'Sonido de prueba',
     img: 'palm.jpg',
     url: '../af/m/test.mp3',
-    plays: 576
+    duration: 1
   },
   {
     id: 9,
     title: 'Selva',
     subtitle: 'Sonido de prueba',
-    img: 'palm.jpg',
+    img: 'joy.jpg',
     url: '../af/m/test.mp3',
-    plays: 576
+    duration: 1
   },
   {
     id: 10,
@@ -77,7 +77,7 @@ export default [
     subtitle: 'Sonido de prueba',
     img: 'dawn.jpg',
     url: '../af/m/test.mp3',
-    plays: 576
+    duration: 1
   },
   {
     id: 11,
@@ -85,6 +85,6 @@ export default [
     subtitle: 'Sonido de prueba',
     img: 'sky.jpg',
     url: '../af/m/test.mp3',
-    plays: 576
+    duration: 1
   }
 ]

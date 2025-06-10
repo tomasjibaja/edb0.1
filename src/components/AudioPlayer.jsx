@@ -88,11 +88,11 @@ const AudioPlayer = ({audioFile}) => {
           <span>{calculateTime(currentTime)}</span>
           <span>{duration ? calculateTime(duration) : '00:00'}</span>
         </div>
-      </div>
-      <div className="progress-bar--controls">
-        <button onClick={() => rewind(-10)}><TbRewindBackward10 /></button>
-        <button onClick={() => togglePlayPause()} >{isPlaying ? <RxPause /> : <IoPlaySharp />}</button>
-        <button onClick={() => rewind(10)}><TbRewindForward10 /></button>
+        <div className="progress-bar--controls">
+          <button onClick={() => rewind(-10)}><TbRewindBackward10 /></button>
+          <button onClick={() => togglePlayPause()} >{isPlaying ? <RxPause /> : <IoPlaySharp />}</button>
+          <button onClick={() => rewind(10)}><TbRewindForward10 /></button>
+        </div>
       </div>
     </div>
   )

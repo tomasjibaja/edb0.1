@@ -11,7 +11,7 @@ const MeditationCard = ({props}) => {
       <img src={`./courses/${props.img}`} alt="" />
       <div className="meditation-card--title">{props.title}</div>
       <div className="meditation-card--subtitle">{props.subtitle}</div>
-      <div className="meditation-card--plays">{props.plays} reproducciones</div>
+      <div className="meditation-card--duration">{props.duration} minutos</div>
       <Link className='meditation-card--link' to={`/meditaciones/${props.id}`}>
         Escuchar
         <IoIosPlayCircle />

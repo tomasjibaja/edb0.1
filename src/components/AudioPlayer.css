@@ -1,19 +1,24 @@
 .audio-player {
-  width: 50%;
+  width: 20rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  gap: 1rem;
   padding: 1rem 2rem;
 }
 
 .progress-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .3rem;
   width: 90%;
 }
 
 .audio-player--timeline {
+  height: 3px;
   width: 100%;
+  color: var(--lila);
+  cursor: pointer;
 }
 
 .progress-bar--timestamps {
@@ -28,11 +33,12 @@
 }
 
 .progress-bar--controls {
-  width: 50%;
+  width: 100%;
+  margin: 1rem auto;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .progress-bar--controls > button {
@@ -52,12 +58,20 @@
 
 @media (max-width: 800px) {
   .audio-player {
-    height: 36px;
     width: 90%;
   }
   
   .audio-player--timeline {
     width: 100%;
+  }
+
+  .progress-bar--controls {
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+
+  .progress-bar--timestamps {
+    font-size: .8rem;
   }
 
   .progress-bar--controls > button {

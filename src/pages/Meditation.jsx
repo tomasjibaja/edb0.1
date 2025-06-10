@@ -20,11 +20,6 @@ const Meditation = () => {
           <h2 className='meditation--title'>{mediLinks[id - 1].title}</h2>
         </div>
         <img className='card' src={`../courses/${mediLinks[id-1].img}`} alt="" />
-        {/* <ReactAudioPlayer
-          src={mediLinks[id - 1].url}
-          controls
-          controlsList='nodownload'
-        /> */}
         <AudioPlayer 
           audioFile={mediLinks[id - 1].url}
         />

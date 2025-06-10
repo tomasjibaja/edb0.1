@@ -10,27 +10,29 @@
   padding: 1.2rem;
   box-sizing: border-box;
   box-shadow: 0 3px 7px transparent;
-  filter: brightness(.9);
   transition: all .3s ease;
 }
 
 .meditation-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 3px 7px rgba(60,50,60,.3);
-  filter: brightness(1.1);
 }
 
 .meditation-card > img {
   position: absolute;
   inset: 0;
+  min-width: 100%;
+  max-width: 150%;
+  min-height: 100%;
+  max-height: 150%;
   object-fit: cover;
-  object-position: center;
-  height: 200%;
   transition: all .7s ease;
+  filter: brightness(.7);
 }
 
 .meditation-card:hover > img {
-  transform: scale(1.02);
+  transform: scale(1.05);
+  filter: brightness(1);
 }
 
 .meditation-card--title {
@@ -49,10 +51,10 @@
   text-align: left;
 }
 
-.meditation-card--plays {
+.meditation-card--duration {
   color: white;
   z-index: 1;
-  font-size: .9rem;
+  font-size: .8rem;
   font-weight: 400;
 }
 

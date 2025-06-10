@@ -62,16 +62,17 @@
   }
   
   .audio-player--timeline {
-    width: 100%;
+    width: 80%;
+  }
+
+  .progress-bar--timestamps {
+    font-size: .8rem;
+    width: 80%;
   }
 
   .progress-bar--controls {
     margin-top: 1rem;
     margin-bottom: 0;
-  }
-
-  .progress-bar--timestamps {
-    font-size: .8rem;
   }
 
   .progress-bar--controls > button {

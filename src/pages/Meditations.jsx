@@ -11,7 +11,12 @@ function Meditations() {
       <div className="meditations--title card">
         <h2>MEDITACIONES</h2>
       </div>
-        <DesktopView>
+      <div className="meditations--content meditations--desktop card">
+            {mediLinks.map((elem, key) => {
+              return <MeditationCard props={elem} key={key} />;
+            })}
+      </div>
+        {/* <DesktopView>
           <div className="meditations--content meditations--desktop card">
             {mediLinks.map((elem, key) => {
               return <MeditationCard props={elem} key={key} />;
@@ -26,7 +31,7 @@ function Meditations() {
               })}
             </Carousel>
           </div>
-        </MobileView>
+        </MobileView> */}
     </div>
   );
 }

@@ -27,7 +27,7 @@
   max-height: 150%;
   object-fit: cover;
   transition: all .7s ease;
-  filter: brightness(.7);
+  filter: brightness(.7) blur(0px);
 }
 
 .meditation-card:hover > img {
@@ -83,6 +83,42 @@
 
 @media (max-width: 800px) {
   .meditation-card {
-    height: 500px;
+    height: 100px;
+    position: relative;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: 0 3px 9px rgba(60,50,60,.7);
+  }
+
+  .meditation-card:hover {
+    box-shadow: 0 3px 12px rgba(60,50,60,.9);
+  }
+
+  .meditation-card > img {
+    filter: blur(0px) brightness(.7);
+  }
+
+  .meditation-card:hover > img {
+    transform: scale(1.05);
+    filter: blur(3px) brightness(.5);
+  }
+
+  .meditation-card--title {
+    font-size: 1.1rem;
+  }
+
+  .meditation-card--subtitle {
+    font-size: .9rem;
+    text-shadow: 0 0 3px black,
+                 0 0 4px black;
+  }
+
+  .meditation-card--link {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 16px;
+    bottom: 0;
+    right: 10px;
   }
 }

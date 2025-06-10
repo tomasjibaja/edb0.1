@@ -35,4 +35,9 @@
     flex-grow: 0;
     height: 50px;
   }
+
+  .meditations--content {
+    padding: 40px 20px;
+    gap: 1.6rem;
+  }
 }

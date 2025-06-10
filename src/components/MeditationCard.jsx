@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './MeditationCard.css';
 import { IoIosPlayCircle } from "react-icons/io";
-
+import { isMobile } from 'react-device-detector'
 
 
 const MeditationCard = ({props}) => {
@@ -13,7 +13,7 @@ const MeditationCard = ({props}) => {
       <div className="meditation-card--subtitle">{props.subtitle}</div>
       <div className="meditation-card--duration">{props.duration} minutos</div>
       <Link className='meditation-card--link' to={`/meditaciones/${props.id}`}>
-        Escuchar
+        {!isMobile && 'Escuchar'}
         <IoIosPlayCircle />
       </Link>
     </div>

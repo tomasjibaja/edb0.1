@@ -35,14 +35,14 @@
 }
 
 .meditation--title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   margin: 0;
 }
 
 .meditation--player > img {
-  width: 20rem;
-  height: 20rem;
+  width: 18rem;
+  height: 18rem;
   object-fit: cover;
   box-shadow: 0 7px 12px 1px rgba(99,99,99,.5);
   border-width: 2px;
@@ -51,7 +51,7 @@
 @media (max-width: 800px) {
 
   .meditation--title {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .meditation--player > img {

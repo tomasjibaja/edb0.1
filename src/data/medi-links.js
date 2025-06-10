@@ -62,5 +62,29 @@ export default [
     img: 'palm.jpg',
     url: 'https://audio.jukehost.co.uk/8pGqJhxGI0VpQE9UhmHfVykbWrVwW0Dy',
     plays: 576
+  },
+  {
+    id: 9,
+    title: 'Silencio',
+    subtitle: 'Dejate rodear por la ausencia de sonidos',
+    img: 'palm.jpg',
+    url: '../src/data/medis/silencio.mp3',
+    plays: 576
+  },
+  {
+    id: 10,
+    title: 'Eclipse',
+    subtitle: 'Un momento supremo',
+    img: 'dawn.jpg',
+    url: '../src/data/medis/eclipse-abr-23.mp3',
+    plays: 576
+  },
+  {
+    id: 11,
+    title: 'Abundancia',
+    subtitle: 'Todo te llega sin límites',
+    img: 'sky.jpg',
+    url: '../src/data/medis/merecimiento-y-abundancia.mp3',
+    plays: 576
   }
 ]

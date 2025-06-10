@@ -1,0 +1,43 @@
+.audio-player {
+  width: 50%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background-color: var(--lila-30);
+  border-radius: 70px;
+}
+
+.audio-player > button {
+  background-color: transparent;
+  border: none;
+  color: var(--lila-dark);
+  cursor: pointer;
+  font-size: 1.6rem;
+  line-height: 1rem;
+}
+
+.audio-player--timeline {
+  flex-grow: 1;
+}
+
+@media (max-width: 800px) {
+  .audio-player {
+    height: 36px;
+    width: 70%;
+    gap: .3rem;
+  }
+  
+  .audio-player--timeline {
+    flex-grow: 0;
+    width: 50%;
+  }
+
+  .audio-player > button {
+    font-size: 1.2rem;
+    line-height: 1rem;
+  }
+}

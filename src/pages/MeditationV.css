@@ -1,0 +1,61 @@
+.meditation {
+  position: relative;
+  overflow: hidden;
+  border-radius: .7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to bottom right, rgba(9,3,9,.2), transparent, transparent, rgba(36,9,36,.2) 90%);
+}
+
+.meditation--goback {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  color: inherit;
+}
+
+.meditation--goback > svg {
+  font-size: 2rem;
+}
+
+.meditation--player {
+  background-image: linear-gradient(to bottom left, rgba(98,3,95,.3), transparent, transparent, rgba(120,99,36,.3) 90%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  flex: 1;
+  height: 100%;
+}
+
+.meditation--supertitle {
+  font-weight: 200;
+  margin: 0;
+}
+
+.meditation--title {
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.meditation--player > img {
+  width: 50vw;
+  height: 50vh;
+  object-fit: cover;
+  opacity: .7;
+  box-shadow: 0 7px 12px 1px rgba(99,99,99,.5);
+}
+
+@media (max-width: 800px) {
+
+  .meditation--title {
+    font-size: 2rem;
+  }
+
+  .meditation--player > img {
+    height: 30vh;
+    width: 70vw;
+  }
+}

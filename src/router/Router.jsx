@@ -7,9 +7,9 @@ import Meditation from "../pages/Meditation";
 import NotFound from "../pages/NotFound";
 import Practices from "../pages/Practices";
 import Login from "../pages/Login";
-import Sidebar from "../components/Sidebar";
 import UserRoute from "../components/UserRoute";
 import PublicRoute from "../components/PublicRoute";
+import MeditationV from "../pages/MeditationV";
 
 const Router = () => {
   return (
@@ -51,6 +51,14 @@ const Router = () => {
         element={
           <UserRoute>
             <Meditation />
+          </UserRoute>
+        }
+      />
+      <Route
+        path="/meditaciones-v/:id"
+        element={
+          <UserRoute>
+            <MeditationV />
           </UserRoute>
         }
       />

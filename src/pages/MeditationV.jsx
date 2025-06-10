@@ -1,0 +1,28 @@
+import React from 'react'
+import AudioPlayer from '../components/AudioPlayer'
+import mediLinks from '../data/medi-links'
+import { useParams } from 'react-router-dom'
+import { IoChevronBackCircleOutline } from "react-icons/io5";
+import { Link } from 'react-router-dom'
+import './MeditationV.css'
+
+const MeditationV = () => {
+  const { id } = useParams();
+  return (
+    <div className='meditation card'>
+      <Link className='meditation--goback' to={'/meditaciones'}>
+        <IoChevronBackCircleOutline />
+      </Link>
+      <div className="meditation--player">
+        <div className="meditation--header">
+          <h4 className='meditation--supertitle'>Meditación</h4>
+          <h2 className='meditation--title'>{mediLinks[id - 1].title}</h2>
+        </div>
+        <img className='card' src={`../courses/${mediLinks[id-1].img}`} alt="" />
+        <AudioPlayer audioFile={'../src/data/medis/silencio.mp3'} />
+      </div>
+    </div>
+  )
+}
+
+export default MeditationV

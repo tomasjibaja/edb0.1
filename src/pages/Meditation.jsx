@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom'
 import { IoChevronBackCircleOutline } from "react-icons/io5";
 import { Link } from 'react-router-dom'
 import './Meditation.css'
+import AudioPlayer from '../components/AudioPlayer';
 
 const Meditation = () => {
   const { id } = useParams();
@@ -19,10 +20,13 @@ const Meditation = () => {
           <h2 className='meditation--title'>{mediLinks[id - 1].title}</h2>
         </div>
         <img className='card' src={`../courses/${mediLinks[id-1].img}`} alt="" />
-        <ReactAudioPlayer
+        {/* <ReactAudioPlayer
           src={mediLinks[id - 1].url}
           controls
           controlsList='nodownload'
+        /> */}
+        <AudioPlayer 
+          audioFile={mediLinks[id - 1].url}
         />
       </div>
     </div>

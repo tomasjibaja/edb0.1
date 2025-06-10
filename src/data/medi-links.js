@@ -1,90 +1,90 @@
 export default [
   {
     id: 1,
-    title: 'Libertad',
+    title: 'Abrite a recibir',
     subtitle: 'Disolvé tus límites',
     img: 'sky.jpg',
-    url: 'https://audio.jukehost.co.uk/a6x5GXjwu01Azv7zeAwLdDFeOkkZTSIO',
+    url: '../af/m/1.mp3',
     plays: 56
   },
   {
     id: 2,
-    title: 'Enfoque',
-    subtitle: 'Conseguí lo que te propongas',
-    img: 'moxa.jpg',
-    url: 'https://audio.jukehost.co.uk/8pGqJhxGI0VpQE9UhmHfVykbWrVwW0Dy',
+    title: 'Eclipse',
+    subtitle: 'Un instante para tu ser',
+    img: 'eclipse.jpg',
+    url: '../af/m/2.mp3',
     plays: 76
   },
   {
     id: 3,
-    title: 'La tierra',
-    subtitle: 'Fundite con la Gran Madre',
+    title: 'Merecimiento',
+    subtitle: 'Todo llega a vos',
     img: 'earth.jpg',
-    url: 'https://audio.jukehost.co.uk/8pGqJhxGI0VpQE9UhmHfVykbWrVwW0Dy',
+    url: '../af/m/3.mp3',
     plays: 456
   },
   {
     id: 4,
-    title: 'Incienso',
-    subtitle: 'Sumergite en el aroma',
-    img: 'stick.jpg',
-    url: 'https://audio.jukehost.co.uk/8pGqJhxGI0VpQE9UhmHfVykbWrVwW0Dy',
+    title: 'Silencio',
+    subtitle: 'Sarlanga',
+    img: 'silencio.jpg',
+    url: '../af/m/4.mp3',
     plays: 23
   },
   {
     id: 5,
-    title: 'Amanecer',
-    subtitle: 'Comenzá tu día con plenitud',
-    img: 'dawn.jpg',
-    url: 'https://audio.jukehost.co.uk/8pGqJhxGI0VpQE9UhmHfVykbWrVwW0Dy',
+    title: 'Soltar el pasado',
+    subtitle: 'Deja ir lo que te detiene',
+    img: 'pasado.jpg',
+    url: '../af/m/5.mp3',
     plays: 87
   },
   {
     id: 6,
-    title: 'Alegría',
-    subtitle: 'Transformá tu ánimo',
-    img: 'joy.jpg',
-    url: 'https://audio.jukehost.co.uk/8pGqJhxGI0VpQE9UhmHfVykbWrVwW0Dy',
+    title: 'Vínculos del pasado',
+    subtitle: 'Relaciones difíciles',
+    img: 'vinculos.jpg',
+    url: '../af/m/6.mp3',
     plays: 987
   },
   {
     id: 7,
     title: 'Gemas',
-    subtitle: 'Descubrí los misterios',
+    subtitle: 'Sonido de prueba',
     img: 'gems.jpg',
-    url: 'https://audio.jukehost.co.uk/8pGqJhxGI0VpQE9UhmHfVykbWrVwW0Dy',
+    url: '../af/m/test.mp3',
     plays: 74
   },
   {
     id: 8,
     title: 'Playa',
-    subtitle: 'Relajate en un lugar especial',
+    subtitle: 'Sonido de prueba',
     img: 'palm.jpg',
-    url: 'https://audio.jukehost.co.uk/8pGqJhxGI0VpQE9UhmHfVykbWrVwW0Dy',
+    url: '../af/m/test.mp3',
     plays: 576
   },
   {
     id: 9,
-    title: 'Silencio',
-    subtitle: 'Dejate rodear por la ausencia de sonidos',
+    title: 'Selva',
+    subtitle: 'Sonido de prueba',
     img: 'palm.jpg',
-    url: '../src/data/medis/silencio.mp3',
+    url: '../af/m/test.mp3',
     plays: 576
   },
   {
     id: 10,
-    title: 'Eclipse',
-    subtitle: 'Un momento supremo',
+    title: 'Amanecer',
+    subtitle: 'Sonido de prueba',
     img: 'dawn.jpg',
-    url: '../src/data/medis/eclipse-abr-23.mp3',
+    url: '../af/m/test.mp3',
     plays: 576
   },
   {
     id: 11,
-    title: 'Abundancia',
-    subtitle: 'Todo te llega sin límites',
+    title: 'Cielo',
+    subtitle: 'Sonido de prueba',
     img: 'sky.jpg',
-    url: '../src/data/medis/merecimiento-y-abundancia.mp3',
+    url: '../af/m/test.mp3',
     plays: 576
   }
 ]

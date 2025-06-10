@@ -1,5 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react'
-import { FaPlay, FaPause } from "react-icons/fa";
+import { TbPlayerPlayFilled, TbPlayerPauseFilled } from "react-icons/tb";
+import { RxPause } from "react-icons/rx";
+import { IoPlaySharp } from "react-icons/io5";
+import { TbRewindBackward10, TbRewindForward10 } from "react-icons/tb";
+
 import './AudioPlayer.css'
 
 const AudioPlayer = ({audioFile}) => {
@@ -54,23 +58,42 @@ const AudioPlayer = ({audioFile}) => {
     setCurrentTime(progressBar.current.value);
   }
 
+  const rewind = (seconds) => {
+    audioPlayer.current.currentTime += seconds;
+    changePlayerCurrentTime();
+  }
+
+  const handleEnd = () => {
+    setCurrentTime(0);
+    setIsPlaying(false);
+  }
+
   return (
     <div className='audio-player'>
       <audio 
         ref={audioPlayer}
         src={audioFile}
+        onEnded={() => handleEnd()}
       >
       </audio>
-      <button onClick={() => togglePlayPause()} >{isPlaying ? <FaPause /> : <FaPlay />}</button>
-      <p>{calculateTime(currentTime)}</p>
-      <input 
-        type="range" 
-        className='audio-player--timeline' 
-        ref={progressBar} 
-        onChange={changeRange}
-        defaultValue='0'
-      />
-      <p>{duration ? calculateTime(duration) : '00:00'}</p>
+      <div className="progress-bar">
+        <input 
+          type="range" 
+          className='audio-player--timeline' 
+          ref={progressBar} 
+          onChange={changeRange}
+          defaultValue='0'
+        />
+        <div className="progress-bar--timestamps">
+          <span>{calculateTime(currentTime)}</span>
+          <span>{duration ? calculateTime(duration) : '00:00'}</span>
+        </div>
+      </div>
+      <div className="progress-bar--controls">
+        <button onClick={() => rewind(-10)}><TbRewindBackward10 /></button>
+        <button onClick={() => togglePlayPause()} >{isPlaying ? <RxPause /> : <IoPlaySharp />}</button>
+        <button onClick={() => rewind(10)}><TbRewindForward10 /></button>
+      </div>
     </div>
   )
 }

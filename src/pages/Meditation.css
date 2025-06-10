@@ -4,7 +4,7 @@
   border-radius: .7rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   background-image: linear-gradient(to bottom right, rgba(9,3,9,.2), transparent, transparent, rgba(36,9,36,.2) 90%);
 }
 

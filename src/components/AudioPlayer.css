@@ -1,43 +1,66 @@
 .audio-player {
   width: 50%;
-  height: 50px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
   gap: 1rem;
   padding: 1rem 2rem;
-  background-color: var(--lila-30);
-  border-radius: 70px;
 }
 
-.audio-player > button {
-  background-color: transparent;
-  border: none;
-  color: var(--lila-dark);
-  cursor: pointer;
-  font-size: 1.6rem;
-  line-height: 1rem;
+.progress-bar {
+  width: 90%;
 }
 
 .audio-player--timeline {
-  flex-grow: 1;
+  width: 100%;
+}
+
+.progress-bar--timestamps {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--lavanda);
+  font-weight: 300;
+  font-family: Helvetica;
+}
+
+.progress-bar--controls {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.progress-bar--controls > button {
+  background-color: transparent;
+  border: none;
+  color: var(--lila-90);
+  cursor: pointer;
+  font-size: 2.5rem;
+  font-weight: 100;
+  transition: all .1s ease-in-out;
+  text-align: center;
+}
+
+.progress-bar--controls > button:hover {
+  color: var(--lavanda);
 }
 
 @media (max-width: 800px) {
   .audio-player {
     height: 36px;
-    width: 70%;
-    gap: .3rem;
+    width: 90%;
   }
   
   .audio-player--timeline {
-    flex-grow: 0;
-    width: 50%;
+    width: 100%;
   }
 
-  .audio-player > button {
-    font-size: 1.2rem;
-    line-height: 1rem;
+  .progress-bar--controls > button {
+    font-size: 2rem;
   }
 }
